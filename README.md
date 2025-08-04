@@ -45,6 +45,10 @@ Route::get('user',[UserController::class, 'getUser'] ); // we can call controler
 # blade
 * a template engine to execute php code .(faster execution,simple)
 
+# main view and subview
+* we can render subview to main view using @include
+* we can pass data from main view to subview
+
 # component 
 * it wil make two directory in view/componets/message 
 * and app/View/Compoenet/message 
