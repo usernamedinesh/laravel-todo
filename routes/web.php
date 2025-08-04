@@ -31,4 +31,5 @@ route::redirect('/welcome', '/'); // always /wecome goes to /
 Route::get('user',[UserController::class, 'getUser'] ); // we can call controler like this
 Route::get('user/{name}',[UserController::class, 'getUserName'] );
 Route::get('aaa/{name}',[UserController::class, 'getView'] );
+Route::get('/',[UserController::class, 'getHome'] );
 

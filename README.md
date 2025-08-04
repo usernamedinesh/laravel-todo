@@ -43,3 +43,4 @@ Route::get('user',[UserController::class, 'getUser'] ); // we can call controler
 > php artisan make:view fodername viewName
 
 # blade
+* a template engine to execute php code .(faster execution,simple)
