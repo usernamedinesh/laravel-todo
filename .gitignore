@@ -1,0 +1,53 @@
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE & tool configs
+/.idea
+/.vscode
+/.fleet
+/.zed
+.phpactor.json
+/.phpunit.cache
+.phpunit.result.cache
+
+# Laravel environment
+.env
+.env.backup
+.env.production
+auth.json
+
+# Node / Composer deps
+/node_modules
+/vendor
+composer.lock
+package-lock.json
+yarn.lock
+
+# Laravel public assets
+/public/build
+/public/hot
+/public/storage
+
+# Laravel storage (ignore everything except versioned files like .gitignore placeholders)
+storage/*.key
+/storage/pail
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/views
+/storage/logs
+
+# SQLite (optional)
+database/*.sqlite
+
+# Laravel bootstrap cache (config, routes)
+bootstrap/cache/*.php
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# Nova (if using Laravel Nova)
+/.nova
+
