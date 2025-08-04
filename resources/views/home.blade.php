@@ -1,3 +1,5 @@
+@include('common.inner')
+<!-- including innner file like this  -->
 <h1>This is home page </h1>
 <a href="/about/{from-home-page}">go to about page </a>
 <h1>Name from controllers : {{$name}}</h1>
