@@ -53,3 +53,6 @@ Route::get('user',[UserController::class, 'getUser'] ); // we can call controler
 * it wil make two directory in view/componets/message 
 * and app/View/Compoenet/message 
 php artisan make:component message 
+* we can use component like this 
+<x-message />
+* but when you want to send something dynamically to need to change in app/View/com../mess..

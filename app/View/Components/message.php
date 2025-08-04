@@ -6,14 +6,22 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class message extends Component
+// class message extends Component
+class Message extends Component
+
 {
+    //for passing variable dynamically
+    public $msg;
+    public $class;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    // public function __construct($msg, $class)
+    public function __construct($msg = '', $class = '')
     {
         //
+        $this->msg=$msg;
+        $this->class=$class;
     }
 
     /**

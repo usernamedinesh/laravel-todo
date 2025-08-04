@@ -26,3 +26,18 @@
     <h3> {{$i}}</h3>
     @endfor 
 </div>
+
+
+<!-- using message component -->
+<x-message />
+<x-message msg="user loged in successfully" class="success"/>
+<style>
+.success{
+    background: lightgreen;
+    color: green;
+    padding: 3px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 10px;
+}
+</style>
