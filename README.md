@@ -34,3 +34,9 @@ page about
 * handle request from user and display view and handle database 
 * we can create controler using cli
 > php artisan make:controller UserController
+
+* getUser => is a function iside the UserController
+Route::get('user',[UserController::class, 'getUser'] ); // we can call controler like this
+
+# View
+> php artisan make:view user

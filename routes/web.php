@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('home');
@@ -27,4 +28,7 @@ Route::get('/about/{name}',function($name) {
 
 // redirect
 route::redirect('/welcome', '/'); // always /wecome goes to /
+Route::get('user',[UserController::class, 'getUser'] ); // we can call controler like this
+Route::get('user/{name}',[UserController::class, 'getUserName'] );
+Route::get('aaa/{name}',[UserController::class, 'getView'] );
 
