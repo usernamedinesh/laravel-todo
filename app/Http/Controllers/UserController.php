@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View; //for view exist or not 
 
 class UserController extends Controller
 {
@@ -11,7 +12,11 @@ class UserController extends Controller
         return "my name is dinesh";
     }
     function getNestedFolder() {
-        return view('admin.login');// admin is directory name
+        // return view('admin.login');// admin is directory name
+        if(view::exists('admin.login')) {
+            return view('admin.login');
+        }else {}
+        echo "no view found";
     }
 
     //accept argument

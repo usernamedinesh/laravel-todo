@@ -40,3 +40,6 @@ Route::get('user',[UserController::class, 'getUser'] ); // we can call controler
 
 # View
 > php artisan make:view user
+> php artisan make:view fodername viewName
+
+# blade
