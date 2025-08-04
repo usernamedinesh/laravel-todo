@@ -29,3 +29,8 @@ page about
 ```
     route::redirect('/from', 'to')
 ```
+
+# Controller is a part of MVC
+* handle request from user and display view and handle database 
+* we can create controler using cli
+> php artisan make:controller UserController

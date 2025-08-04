@@ -25,3 +25,6 @@ Route::get('/about/{name}',function($name) {
     return view('about', ['name'=>$name]);
 });
 
+// redirect
+route::redirect('/welcome', '/'); // always /wecome goes to /
+
