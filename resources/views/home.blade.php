@@ -1,4 +1,6 @@
-@include('common.inner')
+<!-- @include('common.inner',["data" => "Data from home page "]) -->
+@includeIf('common.inner',["data" => "Data from home page "]) 
+<!-- handle error if file not exist -->
 <!-- including innner file like this  -->
 <h1>This is home page </h1>
 <a href="/about/{from-home-page}">go to about page </a>
